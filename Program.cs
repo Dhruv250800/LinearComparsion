@@ -1,4 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+//UC1-- Calculating Length
+
+/*
 int x1, x2, y1, y2;
 double length;
 Console.WriteLine("-----------Calculate the Length Of Line-------------");
@@ -16,3 +20,42 @@ y2 = Convert.ToInt32(Console.ReadLine());
 
 length = Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y1-y1,2));
 Console.WriteLine("Length of Line is : " + length);
+*/
+
+//UC2-- two lines are the equal
+int a1, b1, a2, b2, c1, d1, c2, d2;
+double length1, length2;
+
+Console.WriteLine("Enter the Co ordinates of First Line");
+Console.WriteLine("Enter A1 Value");
+a1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter B1 Value");
+b1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter A2 Value");
+a2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter B2 Value");
+b2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Enter the Co ordinates of Second Line");
+Console.WriteLine("Enter C1 Value");
+c1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter D1 Value");
+d1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter C2 Value");
+c2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter D2 Value");
+d2 = Convert.ToInt32(Console.ReadLine());
+
+length1 = Math.Sqrt(Math.Pow(a2 - a1, 2) + Math.Pow(b2 - b1, 2));
+length2 = Math.Sqrt(Math.Pow(c2 - c1, 2) + Math.Pow(d2 - d1, 2));
+Console.WriteLine("Length of the First Line is--" + length1);
+Console.WriteLine("Length of the Second Line is--" + length2);
+
+if (length1.Equals(length2))
+{
+    Console.WriteLine("Both Line Lengths are Equal");
+}
+else
+{
+    Console.WriteLine("Not Equal");
+}
